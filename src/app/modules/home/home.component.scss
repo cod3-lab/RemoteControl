@@ -1,0 +1,35 @@
+.action {
+  display: flex;
+  margin: -10px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 15px;
+    height: 70px;
+    width: 70px;
+    font-size: 12px;
+    margin: 10px;
+    background-color: rgba(100, 181, 246, 0.04);
+    color: white;
+    border-color: var(--primary-color);
+    border: none;
+    padding: 8px !important;
+    ::ng-deep {
+      .p-button-icon {
+        margin: 5px;
+      }
+      .p-button-label {
+        margin-top: auto;
+        flex: none;
+      }
+    }
+    &:hover {
+      border: 1px solid;
+      background-color: rgba(100, 181, 246, 0.04);
+      color: var(--primary-color);
+      padding: 7px !important;
+    }
+  }
+}

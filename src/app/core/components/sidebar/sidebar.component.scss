@@ -1,0 +1,23 @@
+.sidebar {
+  height: 100vh;
+  width: 50px;
+  border-right: 1px solid var(--surface-d);
+
+  &__item {
+    // border: 1px solid var(--surface-d);
+    width: 100%;
+    height: 50px !important;
+    border-radius: 0 !important;
+
+    &--active {
+      border-left: 3px solid var(--primary-color) !important;
+    }
+
+    &:hover {
+      border-left: 3px solid var(--primary-color) !important;
+      border-right: 1px solid var(--primary-color) !important;
+      border-bottom: 1px solid var(--primary-color) !important;
+      border-top: 1px solid var(--primary-color) !important;
+    }
+  }
+}
